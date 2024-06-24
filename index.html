@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/84ecd52187.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo.png" class="logo" alt="Logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Pursuing Btech Degree in<br>Computer Science & Engineering</p>
+                <h1>Hi, I'm <span>Mrunal Dhongle</span><br>From Nagpur</h1>
+                <div class="header-image-container">
+                    <img src="image/bg1.jpg" alt="header image" class="header-image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------about---------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/pic.jpg" alt="About Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I am a B.Tech (Computer Science) graduate with a passion for building innovative solutions across web development, Python development, and data analytics. I am skilled in leveraging data to create insightful visualizations and building user-friendly web applications. This portfolio showcases my technical expertise and highlights projects that demonstrate my ability to design and develop dynamic web applications using various frameworks and languages.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web development</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Python Developer</span><br>Python Programming</li>
+                            <li><span>Data analytics</span><br>Building Insight</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2020</span><br>SSC</li>
+                            <li><span>2022</span><br>HSC</li>
+                            <li><span>2022</span><br>Working toward my graduation (Btech)<br>from SB Jain Institute of Technology Management<br>& Research at Nagpur</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------services---------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>As a passionate and dedicated college student studying Computer Science, I offer innovative and user-centric web design services. My goal is to create visually appealing, responsive, and functional websites that meet the unique needs of my clients. </p>
+                 <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python Programmer</h2>
+                    <p> I offer my Python programming services, specializing in automation, data analysis, and web development, tailored to meet your project's specific needs. Reach out for efficient, reliable, and scalable solutions delivered promptly.</p>
+                 <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h2>Data analytics</h2>
+                    <p>Data analytics services involve collecting, processing, and analyzing data to extract actionable insights, improve decision-making, and optimize business performance.</p>
+                 <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---------------------portfolio---------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Work</h1>
+        <div class="work-list">
+        <div class="Work">
+            <img src="image/image1.jpeg">
+            <div class="layer">
+                <h3>Social Media App</h3>
+                <p>The app connects you to the talented people around the world.
+                    Download it from play store. </p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="Work">
+            <img src="image/image2.jpg">
+            <div class="layer">
+                <h3>Ms-Office</h3>
+                <p>The app connects you to the talented people around the world.
+                    Download it from microsoft store. </p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            
+        </div>
+        <div class="Work">
+            <img src="image/image3.jpg"> <div class="layer">
+                <h3>Visual Studio Code Editor App</h3>
+                <p>The app connects you to the talented people around the world.
+                    Download it from play store. </p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------------------Resume--------------------------------->
+<div id="resume">
+    <div class="container">
+        <h1 class="sub-title">Resume</h1>
+        <div class="resume-content">
+            <a href="image/cv.mrunal.pdf" download class="btn">Download My Resume</a>
+        </div>
+    </div>
+</div>
+
+<!-----------------------------------------contact--------------------------------------------------->
+<div id="contact">
+    <div class="container">
+        <h1 class="sub-title">Contact Me</h1>
+        <div class="contact-form">
+            <form action="your-server-side-code" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</div> 
+<!------------------------------------------------Footer---------------------------------------------->
+<div id="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="social-links">
+        
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <p>&copy; 2024 Mrunal Dhongle. All rights reserved.</p>
+        </div>
+    </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(event, tabname) {
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
